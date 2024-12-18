@@ -1,9 +1,6 @@
 package com.example.api_proyecto_final.modelos;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Vehiculo {
@@ -17,6 +14,8 @@ public class Vehiculo {
     private String marca;
 
     //relacion
+    @ManyToOne
+    @JoinColumn(name = "usuarioId")
     private String idUsuario;
 
     public Vehiculo() {

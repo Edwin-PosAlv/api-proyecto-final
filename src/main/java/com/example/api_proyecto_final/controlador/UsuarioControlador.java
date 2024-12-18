@@ -2,6 +2,7 @@ package com.example.api_proyecto_final.controlador;
 
 import com.example.api_proyecto_final.modelos.Usuario;
 import com.example.api_proyecto_final.servicios.UsuarioServicio;
+import jakarta.persistence.OneToMany;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
