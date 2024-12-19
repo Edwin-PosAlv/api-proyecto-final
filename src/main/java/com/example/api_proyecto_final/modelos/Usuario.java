@@ -2,8 +2,6 @@ package com.example.api_proyecto_final.modelos;
 
 import jakarta.persistence.*;
 
-import java.util.List;
-
 @Entity
 public class Usuario {
 
@@ -15,20 +13,6 @@ public class Usuario {
     private String nombre;
     private String correo;
     private String contrasena;
-
-    @OneToMany(mappedBy = "usuario")
-    private List<Vehiculo> listaVehiculos;
-
-    public Usuario() {
-    }
-
-    public Usuario(Integer id, String cedula, String nombre, String correo, String contrasena) {
-        this.id = id;
-        this.cedula = cedula;
-        this.nombre = nombre;
-        this.correo = correo;
-        this.contrasena = contrasena;
-    }
 
     public Integer getId() {
         return id;

@@ -12,22 +12,7 @@ public class Vehiculo {
     private String placa;
     private String modelo;
     private String marca;
-
-    //relacion
-    @ManyToOne
-    @JoinColumn(name = "usuarioId")
     private String idUsuario;
-
-    public Vehiculo() {
-    }
-
-    public Vehiculo(Integer id, String placa, String modelo, String marca, String idUsuario) {
-        this.id = id;
-        this.placa = placa;
-        this.modelo = modelo;
-        this.marca = marca;
-        this.idUsuario = idUsuario;
-    }
 
     public Integer getId() {
         return id;
